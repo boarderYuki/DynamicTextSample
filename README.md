@@ -11,4 +11,6 @@
 
 
 
-![스크린샷](./screenshot/스크린샷.png)
+<div>
+<img width="1905" alt="default" src="https://user-images.githubusercontent.com/19482674/41137757-deab3236-6b17-11e8-8069-b2423104366c.png">
+</div>
