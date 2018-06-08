@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,63 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicTextSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDO-ND-eIE">
+                                <rect key="frame" x="20" y="106.33333333333331" width="374" height="523.33333333333348"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="netflix-gift-card-50-euro" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-xq-UxW">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="523.33333333333337"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hQR-xq-UxW" secondAttribute="height" multiplier="591:827" id="nIk-hj-RuL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boarder Yuki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6kk-cN-DQJ">
+                                        <rect key="frame" x="90.333333333333329" y="381.33333333333337" width="194.33333333333337" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018. 06. 08" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CNB-3S-7CN">
+                                        <rect key="frame" x="187.33333333333334" y="434.66666666666669" width="97.000000000000028" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6kk-cN-DQJ" firstAttribute="centerY" secondItem="IDO-ND-eIE" secondAttribute="centerY" multiplier="1.54" id="6V7-OG-iqH"/>
+                                    <constraint firstAttribute="trailing" secondItem="hQR-xq-UxW" secondAttribute="trailing" id="AgX-qX-G6C"/>
+                                    <constraint firstItem="CNB-3S-7CN" firstAttribute="centerX" secondItem="IDO-ND-eIE" secondAttribute="centerX" multiplier="1.26" id="I97-hN-8iF"/>
+                                    <constraint firstItem="hQR-xq-UxW" firstAttribute="top" secondItem="IDO-ND-eIE" secondAttribute="top" id="PLA-ks-X19"/>
+                                    <constraint firstItem="CNB-3S-7CN" firstAttribute="width" secondItem="hQR-xq-UxW" secondAttribute="height" multiplier="97:523" id="Q53-Vc-mPs"/>
+                                    <constraint firstItem="CNB-3S-7CN" firstAttribute="centerY" secondItem="IDO-ND-eIE" secondAttribute="centerY" multiplier="1.7" id="SoG-7h-TG8"/>
+                                    <constraint firstItem="6kk-cN-DQJ" firstAttribute="centerX" secondItem="IDO-ND-eIE" secondAttribute="centerX" id="Tvd-jR-OJJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hQR-xq-UxW" secondAttribute="bottom" id="W59-UO-fEN"/>
+                                    <constraint firstItem="hQR-xq-UxW" firstAttribute="leading" secondItem="IDO-ND-eIE" secondAttribute="leading" id="gcl-Rp-Q24"/>
+                                    <constraint firstItem="6kk-cN-DQJ" firstAttribute="width" secondItem="hQR-xq-UxW" secondAttribute="height" multiplier="194:523" id="vPp-wc-Lnz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IDO-ND-eIE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DRZ-2t-VjF"/>
+                            <constraint firstItem="IDO-ND-eIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wu9-NE-1fg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IDO-ND-eIE" secondAttribute="trailing" constant="20" id="njW-ai-3Zg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="34.239130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="netflix-gift-card-50-euro" width="295" height="413"/>
+    </resources>
 </document>
