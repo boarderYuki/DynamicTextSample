@@ -9,3 +9,6 @@
 3. 텍스트를 끌어다 배경이미지와의 제약조건을 aspect ratio 로 설정한다.
 4. 텍스트라벨의 오토쉬링크를 스케일로 설정한다.
 
+
+
+[스크린샷.png](https://github.com/boarderYuki/DynamicTextSample/blob/master/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA.png)
